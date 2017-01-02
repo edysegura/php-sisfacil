@@ -1,0 +1,28 @@
+<?
+/*
+Nome do Script : LOGIN.PHP
+Autor(es)      : Ed. David Segura (wdedy@uol.com.br, edysegura@gmail.com).
+Data           : 13 de Outubro de 2004.
+Versão         : 1.0
+Parâmetros     : Nenhum.
+Descrição      : Script contendo a validação de usuário.
+*/
+
+//inicializa a sessão
+session_start();
+
+//destrói as variáveis
+unset($_SESSION['funcLogin']);
+unset($_SESSION['funcNome']);
+unset($_SESSION['funcSenha']);
+unset($_SESSION['funcCod']);
+unset($_SESSION['funcDepCod']);
+unset($_SESSION['isAdm']);
+
+//Libera todas as variáveis de sessão
+session_unset();
+//destruição da sessão.
+session_destroy();
+//redireciona para a tela de login
+header("Location: index.php");
+?>

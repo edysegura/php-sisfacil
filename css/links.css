@@ -1,0 +1,19 @@
+/*
+Autor(es)      : Ed. David Segura (wdedy@uol.com.br, edysegura@gmail.com).
+Data           : 12 de Outubro de 2004.
+Versão         : 1.0
+Parâmetros     : Nenhum.
+Descrição      : Folhas de estilos para a padronização do Sistema FACIL!.
+*/
+
+a:link, a:visited, a:active
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	color: blue;
+	text-decoration: none;
+}
+
+a:hover
+{
+	text-decoration: underline;
+}
